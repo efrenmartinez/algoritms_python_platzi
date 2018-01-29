@@ -1,1 +1,1 @@
-# python_plazti
+###### Ejercicios del curso Python de Platzi

@@ -11,7 +11,7 @@ def main():
     turtle.mainloop()
 
 def make_square(dave):
-    length = int(raw_input('Longitud del cuadrado '))
+    length = int(input('Longitud del cuadrado '))
     
     for i in range(4):
         make_line_and_turn(dave, length)

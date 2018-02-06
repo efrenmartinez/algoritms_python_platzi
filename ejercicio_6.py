@@ -9,6 +9,7 @@ def run():
     else:
         print('ES PRIMO')
 
+
 def is_prime(number):
     number_uno = number + 1
     count = 0
@@ -16,6 +17,7 @@ def is_prime(number):
         if number % i == 0:
             count += 1
     return count
-    
+
+
 if __name__ == '__main__':
     run()

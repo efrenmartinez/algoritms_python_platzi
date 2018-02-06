@@ -68,20 +68,24 @@ IMAGES = ['''
         =========''', '''
 ''']
 
+
 WORDS = [
     'hola',
     'mundo',
     'cruel'
 ]
 
+
 def random_word():
     index = random.randint(0, len(WORDS) - 1)
     return WORDS[index]
 
-def display_board(tries,hidden_word):
+
+def display_board(tries, hidden_word):
     print(IMAGES[tries])
     print(hidden_word)
     print('Intento {}'.format(tries))
+
 
 def run():
     word = random_word()
@@ -93,22 +97,20 @@ def run():
         display_board(tries, hidden_word)
         current_word = str(input('Escoga una palabra '))
 
-        other_word = []
-        for i in list(word):
-            if i == current_word:
-                other_word.append(i)
-        
-        if len(other_word) == 0:
+        letter_indexes = []
+        for index in range(len(word)):
+            if index == current_word:
+                letter_indexes.append(index)
+        if len(letter_indexes) == 0:
             tries += 1
             if tries == 7:
                 display_board(tries, hidden_word)
                 print('PERDISTE')
                 break
         else:
-            for idx in other_word:
+            for idx in letter_indexes:
                 hidden_word[idx] = current_word
-            
-        other_word = []
+            letter_indexes = []
 
 
 if __name__ == '__main__':

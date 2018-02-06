@@ -1,6 +1,7 @@
-## Calculo de divisas
-## Calcula pesos mexicanos a dolares.
+''' Calculo de divisas
+    Calcula pesos mexicanos a dolares. '''
 # -*- coding:utf-8 -*-
+
 
 def run():
     print('Calculo de divisas')
@@ -9,6 +10,7 @@ def run():
     amount = float(input('Pesos mexicanos '))
     result = float(calcule_dolars(amount))
     print('$ {}  pesos son $ {} dolares'.format(amount, result))
+
 
 def calcule_dolars(amount): 
     price_dolar = 18.50

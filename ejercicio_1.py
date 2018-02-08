@@ -1,4 +1,6 @@
-## crea un cuadrado usando la libreria turtele
+'''
+crea un cuadrado usando la libreria turtle
+'''
 import turtle
 
 window = turtle.Screen()

@@ -11,5 +11,8 @@ def run(search_number):
 
 
 if __name__ == '__main__':
-    search_number = int(input('Escriba el numero a buscar '))
+    try:
+        search_number = int(input('Escriba el numero a buscar '))
+    except ValueError: 
+        print('No acepta letras.')
     run(search_number)

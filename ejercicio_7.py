@@ -1,4 +1,4 @@
-## factorial de un numero dado
+## factorial de un número dado
 # -*- coding: utf-8 -*-
 def factorial(number):
     if number == 0:
@@ -7,6 +7,11 @@ def factorial(number):
 
 
 if __name__ == '__main__':
-    number = int(input('Numero dado '))
-    result = factorial(number)
-    print(result)
+    while True:
+        try:
+            number = int(input('Escribe una número dado : '))
+            result = factorial(number)
+            print(result)
+        except ValueError:
+            print('No recibe caracteres.')
+    

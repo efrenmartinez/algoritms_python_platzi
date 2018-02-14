@@ -4,7 +4,7 @@ from lamp import Lamp
 
 
 def run():
-    lamp = Lamp(is_turned_on = False)
+    lamp = Lamp(is_turned_on=False)
     print("="*10)
     bool_on = str(input('Desea prender la lamparada (S/N) '))
 

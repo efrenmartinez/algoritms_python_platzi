@@ -1,3 +1,7 @@
+'''
+Dibuja un cuadrado usando la libreria turtle
+obteniendo la longitud del cuadrado.
+'''
 # -*- coding:utf-8 -*-
 
 import turtle
@@ -10,11 +14,15 @@ def main():
 
     turtle.mainloop()
 
+
 def make_square(dave):
-    length = int(input('Longitud del cuadrado '))
-    
-    for i in range(4):
-        make_line_and_turn(dave, length)
+    try:
+        length = int(input('Longitud del cuadrado '))
+        for i in range(4):
+            make_line_and_turn(dave, length)
+    except ValueError:
+        print('No acepta caracteres.')
+
 
 def make_line_and_turn(dave, length):
     dave.forward(length)
@@ -23,3 +31,4 @@ def make_line_and_turn(dave, length):
 
 if __name__ == '__main__':
     main()
+ 

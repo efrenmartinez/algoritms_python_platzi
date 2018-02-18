@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 ## calcula si un numero es primo o no
 def run():
-    number = int(raw_input('numero '))
+    number = int(input('numero '))
 
     int_contador = is_prime(number)
     if(int_contador > 2):

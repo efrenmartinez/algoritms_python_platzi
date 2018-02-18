@@ -1,5 +1,5 @@
 '''
-crea un cuadrado usando la libreria turtle
+Dibuja un cuadrado usando la libreria turtle
 '''
 import turtle
 
